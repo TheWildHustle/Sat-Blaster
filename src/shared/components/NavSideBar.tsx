@@ -72,10 +72,28 @@ export const NavSideBar = ({
             <li>
               <Link to="/">
                 <RiHomeLine className="w-5 h-5" />
-                Home
+                Wallet
               </Link>
             </li>
+            <Link to="/">
+              <RiFileLine className="w-5 h-5" />
+              Zap Stream
+            </Link>
             <li>
+            </li>
+            <Link to="/">
+              <RiFileLine className="w-5 h-5" />
+              Zap Split
+            </Link>
+            <li>
+            </li>
+            <Link to="/">
+              <RiFileLine className="w-5 h-5" />
+              Zapscribe
+            </Link>
+            <li>
+
+              
              
             </li>
           </>
@@ -95,7 +113,7 @@ export const NavSideBar = ({
         <li>
           <Link to="/settings">
             <RiSettings3Line className="w-5 h-5" />
-            Settings
+            Relays
           </Link>
         </li>
         {!config.isCreateIris && (
@@ -106,7 +124,9 @@ export const NavSideBar = ({
             </Link>
           </li>
         )}
+        
       </ul>
+      
       <hr className="border-base-300" />
       <Show when={isLoggedIn}>
         <ul className="menu w-full rounded-box">

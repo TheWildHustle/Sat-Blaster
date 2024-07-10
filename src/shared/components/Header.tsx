@@ -23,7 +23,7 @@ export default function Header() {
   );
   const location = useLocation();
   const appName = location.pathname.split('/')[1];
-  const filePath = `apps/${appName === 'document' ? 'docs' : appName}/documents/${file}`;
+  const filePath = `apps/${appName === 'document' ? 'Menu' : appName}/documents/${file}`;
 
   return (
     <>
@@ -55,7 +55,7 @@ export default function Header() {
               <RiFolderOpenLine className="w-8 h-8 mr-2" />
             </Show>
             <Show when={!file}>
-              <h1 className="text-2xl text-base-content capitalize">{appName || 'docs'}</h1>
+              <h1 className="text-2xl text-base-content capitalize">{appName || 'Menu'}</h1>
             </Show>
           </Link>
           <Show when={!!file}>

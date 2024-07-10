@@ -10,108 +10,15 @@ export default function () {
       <p>
         This is a nostr and cashu powered bitcoin wallet named sat blaster, it enables stream or subscribe to npub while supporting zap splits 
       </p>
-      <p>
+      
         
-      </p>
-      <p>Files to edit:</p>
-      <ul className="list-disc">
-        <li>
-          This page: <code>src/pages/home/index.tsx</code>
-        </li>
-        <li>
-          Navigation sidebar: <code>src/shared/components/NavSideBar.tsx</code>
-        </li>
-        <li>
-          Router:
-          <code>src/pages/index.tsx</code>
-        </li>
-      </ul>
-      <p>Reference of included libraries:</p>
-      <ul className="list-disc">
-        <li>
-          <a href="https://irisdb.iris.to" target="_blank" rel="noopener noreferrer">
-            IrisDB
-          </a>
-          : distributed database
-        </li>
-        <li>
-          <a href="https://github.com/nostr-dev-kit/ndk" target="_blank" rel="noopener noreferrer">
-            NDK
-          </a>
-          : syncing data over{' '}
-          <a href="https://nostr.com" target="_blank" rel="noopener noreferrer">
-            Nostr
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://github.com/nbd-wtf/nostr-tools"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            nostr-tools
-          </a>
-          : mostly used for public key formatting (nip19)
-        </li>
-        <li>
-          <a
-            href="https://tailwindcss.com/docs/installation"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Tailwind
-          </a>
-          : CSS framework
-        </li>
-        <li>
-          <a href="https://daisyui.com/" target="_blank" rel="noopener noreferrer">
-            DaisyUI
-          </a>
-          : UI components & colors
-        </li>
-        <li>
-          <a href="https://github.com/yjs/yjs" target="_blank" rel="noopener noreferrer">
-            yjs
-          </a>
-          : collaborative text documents
-        </li>
-        <li>
-          <a href="https://github.com/ueberdosis/tiptap" target="_blank" rel="noopener noreferrer">
-            TipTap
-          </a>
-          : collaborative rich text documents
-        </li>
-        <li>
-          <a href="https://remixicon.com/" target="_blank" rel="noopener noreferrer">
-            Remix Icon
-          </a>
-          : icons
-        </li>
-        <li>
-          <a href="https://vitejs.dev/" target="_blank" rel="noopener noreferrer">
-            Vite
-          </a>
-          : build & development environment
-        </li>
-        <li>
-          <a href="https://react.dev/" target="_blank" rel="noopener noreferrer">
-            React
-          </a>
-          : web application framework
-        </li>
-      </ul>
+    
       <p>
         <a href="https://github.com/irislib/iris-docs" target="_blank" rel="noopener noreferrer">
           GitHub
         </a>
-      </p>
-      <h2>Simple chat example</h2>
-      <p>
-        Shows messages by you and your followed users.{' '}
-        <code>src/shared/components/chat/Chat.tsx</code>
-      </p>
-      <p>
-        <h3>#create-iris</h3>
+      
+        <h3>Chat</h3>
       </p>
       <Chat path="apps/chat/chats/create-iris" />
     </div>
