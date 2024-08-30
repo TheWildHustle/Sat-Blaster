@@ -1,0 +1,30 @@
+.dashboard {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.graph-container {
+  margin: 20px 0;
+}
+
+.top-interactions {
+  margin-top: 20px;
+}
+
+.top-interactions button {
+  margin-right: 10px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.top-interactions button:hover {
+  background-color: #0056b3;
+}
+
+.interaction-list {
+  margin-top: 20px;
+}
