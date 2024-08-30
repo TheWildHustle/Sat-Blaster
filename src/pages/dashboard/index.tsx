@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Line } from 'react-chartjs-2';
 import 'chart.js/auto';
+import NostrLogin from '@/shared/components/NostrLogin';
+import NIP60Wallet from '@/shared/components/NIP60Wallet';
 
 const Dashboard = () => {
   const [data, setData] = useState({
@@ -41,6 +43,8 @@ const Dashboard = () => {
   return (
     <div className="dashboard">
       <h1>Creator Dashboard</h1>
+      <NostrLogin />
+      <NIP60Wallet />
       <div className="graph-container">
         <Line data={data} />
       </div>
