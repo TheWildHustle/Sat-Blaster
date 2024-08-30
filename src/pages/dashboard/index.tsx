@@ -3,6 +3,7 @@ import { Line } from 'react-chartjs-2';
 import 'chart.js/auto';
 import NostrLogin from '@/shared/components/NostrLogin';
 import NIP60Wallet from '@/shared/components/NIP60Wallet';
+import './Dashboard.css';
 
 const Dashboard = () => {
   const [data, setData] = useState({
@@ -21,23 +22,31 @@ const Dashboard = () => {
 
   useEffect(() => {
     // Fetch data for the graph and top interactions
-    // This is a placeholder. Replace with actual data fetching logic.
-    setData({
-      labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul'],
-      datasets: [
-        {
-          label: 'Engagement Metrics',
-          data: [65, 59, 80, 81, 56, 55, 40],
-          borderColor: 'rgba(75,192,192,1)',
-          backgroundColor: 'rgba(75,192,192,0.2)',
-        },
-      ],
-    });
+    fetch('/api/engagement-metrics')
+      .then(response => response.json())
+      .then(data => {
+        setData({
+          labels: data.labels,
+          datasets: [
+            {
+              label: 'Engagement Metrics',
+              data: data.values,
+              borderColor: 'rgba(75,192,192,1)',
+              backgroundColor: 'rgba(75,192,192,0.2)',
+            },
+          ],
+        });
+      });
   }, []);
 
   const handleToggle = (type) => {
     setTopInteractions(type);
     // Fetch and update top interactions based on the type
+    fetch(`/api/top-interactions?type=${type}`)
+      .then(response => response.json())
+      .then(data => {
+        // Update the state with the fetched data
+      });
   };
 
   return (
